@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="start_quiz">Start Quiz</div>
+    
+    <div class="quiz_box inactive">
+        <h2 id="que_text">1. What is hritik??</h2>
+        <div class="options">
+            <div class="option incorrect">Girl <i class="fa-sharp fa-solid fa-circle-xmark"></i></div>
+            <div class="option correct">Boy  <i class="fa-solid fa-circle-check"></i></div>
+            <div class="option">ritik</div>
+            <div class="option">roshan</div>
+        </div>
+        <div class="quiz_footer">
+            <div class="footer_left">
+            <span id="que_count">11</span> / <span id="que_total">3</span>
+            </div>
+            <div class="footer_right">
+                <div class="next_btn inactive">Next</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result_box inactive">
+        <h2>Result</h2>
+        <hr>
+        <div class="result">
+            <h3 class="total_que">Total Questions:</h3>
+            <h3 class="right_ans">Right Answer: </h3>
+            <h3 class="wrong_ans">Wrong Answer:  </h3>
+            <h3 class="percentage">Percentage: </h3>
+        </div>
+        <div class="result_footer">
+            <div class="again_quiz">Start Again</div>
+            <div class="exit">Exit</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="index.js"></script>
+</html>

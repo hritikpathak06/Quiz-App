@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Merriweather&family=Noto+Sans:ital,wght@1,300&family=Open+Sans:ital,wght@0,300;0,500;1,600&family=Oswald:wght@500&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: purple;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+
+.start_quiz {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: 2px solid white;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 3px 8px 16px;
+}
+
+.start_quiz:hover {
+    background-color: black;
+    border: 2px solid black;
+    box-shadow: 3px 8px 16px rgba(0, 0, 0, )
+}
+
+/* for displaying none we add class to start quiz class */
+.inactive {
+    display: none;
+}
+.disable{
+    pointer-events: none;
+}
+
+/* ********************* */
+.quiz_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    border: 2px solid white;
+    box-shadow: 3px 8px 1rem;
+    padding: 3.4rem;
+    width: 100%;
+    max-width: 50%;
+    background-color: darkblue;
+}
+
+.quiz_box h2 {
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.quiz_box .option {
+    font-size: 1.2rem;
+    border: 2px solid white;
+    margin: 1.4rem 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: .8s;
+    padding: .5rem;
+    position: relative;
+}
+
+
+.quiz_box .option .fa-solid{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    font-size: 2rem;
+}
+
+.quiz_box .option.correct{
+    color: black;
+    background-color: green;
+    border: 2px solid green;
+}
+.quiz_box .option.incorrect {
+    color: black;
+    background: red;
+    border: 2px solid red;
+}
+
+.quiz_box .option:hover {
+    background-color: purple;
+}
+
+.quiz_footer {
+    border-top: 2px dashed white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.footer_left {
+    margin-top: 1rem;
+}
+
+.footer_right {
+    margin-top: 2rem;
+}
+
+.next_btn {
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(128, 255, 0, 0.303);
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 2px 5px 18px;
+    width: 8rem;
+    text-align: center;
+}
+
+.next_btn:hover {
+    background-color: chartreuse;
+}
+
+.result_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    border: 2px solid white;
+    box-shadow: 3px 8px 1rem;
+    padding: 1rem;
+    width: 50%;
+    max-width: 30%;
+    background-color: darkblue;
+}
+
+.result_box h2 {
+    font-size: 3rem;
+    color: black;
+    width: 100%;
+    text-decoration: firebrick;
+    background-color: whitesmoke;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.result_box .result{
+    padding: 1.5rem;
+}
+.result_box h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.result_footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.again_quiz{
+    border: 2px solid white;
+    padding: 0.3rem;
+    border-radius: 0%1rem;
+    cursor: pointer;
+    background-color: black;
+    transition: .8s;
+}
+.again_quiz:hover{
+    background-color: white;
+    color: black;
+}
+
+.exit{
+    border: 2px solid white;
+    padding: .3rem;
+    border-radius: 0%1rem;
+    cursor: pointer;
+    background-color: black;
+    transition: .8s;
+}
+.exit:hover{
+    background-color: white;
+    color:black;
+}
